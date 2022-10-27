@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Teste</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./scripts/scripts.js" defer></script>
+</head>
+<body>
+    <main class="main">
+        <section class="elementos">
+            <h1>Quiz Teste</h1>
+            <article class="instrução" id="instrução">
+                <h3>Responda a pergunta com apenas uma alternativa</h3>
+            </article>
+            <article class="perguntas" id="perguntas">
+                <div class="pergunta" id="pergunta">
+                    <h4 class="titulo-pergunta" id="tituloPergunta"></h4>
+                </div>
+                <div class="div-lista">
+                    <ol class="lista-resposta" type="A">
+                        <li id="alternativaA" class="alternativa" value="A" onclick="verificar(this)"></li>
+                        <li id="alternativaB" class="alternativa" value="B" onclick="verificar(this)"></li>
+                        <li id="alternativaC" class="alternativa" value="C" onclick="verificar(this)"></li>
+                    </ol>
+                </div>                
+            </article>
+            <h3 id="info">Questão <span id="nQuestão"></span> de <span id="qntQuestões"></span></h3>
+            <div id="info">
+                <span id="tentativas"></span>
+            </div>
+        </section>
+        <footer>Quiz Teste &copy;</footer>
+    </main>
+</body>
+</html>
